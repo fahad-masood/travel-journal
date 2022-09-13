@@ -1,13 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F55A5A;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.card-container{
+  box-sizing: border-box;
+  width: 85%; 
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem 0;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.card-container:last-child{
+  border: none;
+}
+
+.card-image{
+  object-fit: cover;
+  width: 30%;
+  height: 11rem;
+  border-radius: 0.4rem;
+}
+
+.content{
+  width: 70%;
+  padding-left: 1rem;
+}
+
+.card-location{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 0;
+}
+
+.location{
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: 17%;
+  text-transform: uppercase;
+  padding-right: 0.5rem;
+}
+
+.map{
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: #918E9B;
+  text-decoration: underline;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 1.56rem;
+  color: #2B283A;
+  margin-top: 0;
+  line-height: 1.8rem;
+}
+
+.date{
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 0.75rem;
+  color: #2B283A;
+}
+
+.description{
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #2B283A;
+}
+
+@media all and (min-width: 500px){
+  .location,
+  .map,
+  .date, 
+  .description{
+    font-size: 1rem;
+  }
+  .title{
+    font-size: 2rem;
+  }
+  .card-container{
+    align-items:center;
+  }
+  .content{
+    padding-left: 2rem;
+  }
 }
