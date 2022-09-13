@@ -20,9 +20,9 @@ export const Card = (props) => {
       <div className="content">
         <div className="card-location">
           <h5 className="location">📍 {props.location}</h5>
-          <p className="map" onClick={props.googleMapsUrl}>
+          <a href={props.googleMapsUrl} target="_blank" className="map">
             View on Google Maps
-          </p>
+          </a>
         </div>
         <h3 className="title">{props.title}</h3>
         <p className="date">
